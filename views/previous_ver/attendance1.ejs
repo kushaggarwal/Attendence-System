@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/attendance" method="post">
+      <div name="presentList">
+        <% for(let i=0; i<Students.length; i++) { %>
+          <label><%= Students[i].studentRollNo %></label>
+          <input type="checkbox" name="<%= Students[i].studentRollNo %>">
+          <br>
+        <%}%>
+    </div>
+      <button type="submit" name="button">submit</button>
+    </form>
+  </body>
+</html>

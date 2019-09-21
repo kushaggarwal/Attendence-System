@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>create section</title>
+  </head>
+  <body>
+    <input type="text" name="" value="">
+    <form class="" action="/admin/create_section" method="post">
+      <input type="text" name="" value="">
+    </form>
+
+    <script>
+  function myFunction() {
+    var input = document.querySelector("input");
+
+    let val = Number(input.value);
+    if(val = undefined) val=0;
+    let form = document.querySelector(".form")
+    for(let i=0; i<val; i++) {
+      form.appendChild(document.createElement("input"))
+      console.log(i+1)
+     }
+    form.appendChild(document.createElement("input"))
+  }
+  </script>
+  </body>
+</html>
